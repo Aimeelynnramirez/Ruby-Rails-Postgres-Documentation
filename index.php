@@ -2,7 +2,7 @@
 <html>
 <body>
 <head>
- <title>My first PHP page</title>
+ <title>My first trying php page</title>
  </head>
 
 
