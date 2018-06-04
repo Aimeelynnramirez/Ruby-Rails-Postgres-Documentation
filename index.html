@@ -1,21 +1,120 @@
 <!DOCTYPE html>
 <html>
-<head> 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <style>
-body {color:black; background-color:grey;}
+html{
+  position:absolute;
+  overflow: auto;
+  text-align:right;
+  background:url("https://cdn.pixabay.com/photo/2014/09/24/16/28/bricks-459299_1280.jpg");
+  background-color: #cc99a2;
+
+}
+body {
+  position:absolute;
+  color:black;
+  padding:0 25%;
+  background-repeat:repeat-x;
+  height:1000px;
+  width:1000px;
+  max-width: 100%;
+  background:url("https://cdn.pixabay.com/photo/2014/09/24/16/28/bricks-459299_1280.jpg");
+
+}
+.container{
+  z-index: -1;
+  position: fixed; /* Stay in place */
+  background-image: url("https://cdn.pixabay.com/photo/2017/01/17/03/57/season-1985856_1280.jpg");
+  background-position:center;
+  border: 4px dashed black;
+  height:50%;
+  background-color: white;
+
+
+}
+
 .modal {
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rebeccapurple;
-    color:black;/* Fallback color */}
+  position:absolute;
+   z-index: 1;
+    font-size: 1.5rem;
+    color: white;
+    text-align:center; /* Location of the box */
+
+    width:100%; /* Full width */
+    height: 20%; /* Full height */
+   background-color:grey;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .modal-info{
+   /* Sit on top */
+    position:absolute;
+    color: white;
+
+    text-align:center; /* Location of the box */
+
+    background-color:#99ccc3;
+    width:100%; /* Full width */
+    height: 20%; /* Full height */
+    font-family: 'Open Sans', sans-serif;
+  }
+  .modal-row{
+      background: teal;
+      max-width: 50%;/* Full width */
+
+      border: 3px dashed black;
+      text-align:center; /* Location of the box */
+      width:100%; /* Full width */
+      height: 100%; /* Full height */
+      font-family: 'Open Sans', sans-serif;
+    }
+    p{
+      text-align:center; /* Location of the box */
+      width:100%;
+      height: 100%; /* Full height */
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    }
     </style>
-    </head> <body> 
-    
-    <div class='modal'> this is a static page for wordpress api react </div></body></html>
+    </head>
+    <body>
+
+  <div class="container">
+      <div class="modal">
+      <div class="modal-info">image</div>
+        </div>
+
+<div class="modal-row">
+  Welcome to this page hosting a backend locally:
+  <code> Fork it here!</code>
+  for a front-end repo for github !!
+  <hr>
+  Shortcut list of command lines:
+  <hr>
+
+<p>
+<li>  \l list</li>
+<li>\c  connect</li>
+<li>\dt  display table</li>
+<li>\i  run file</li>
+ example:
+<li>\i scripts/cookbook/010_insert_into_ingredients.</li>
+<li>\d  data</li>
+.clear  reset of data after ran a new folder?
+ select * from ingredients; don't forget ;   (semicolon)
+don't forget tab complete!
+</p>
+
+ </div>
+</div>
+  </body>
+
+    </html>
