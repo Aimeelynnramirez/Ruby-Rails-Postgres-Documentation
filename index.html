@@ -142,6 +142,9 @@ height:297px;
   .glyphicon {
     color:white;
   }
+  .glyphicon-open{
+    color:red;
+  }
   .button:active {
     border-color: red !important;
     width:100%;
@@ -195,7 +198,7 @@ button:hover {
 
 
     button.btn-lg{ display: hidden !important;}
-  span.glyphicon-globe{{ display: hidden !important;}
+  span.glyphicon-globe{display: hidden !important;}
 
 
   }
@@ -203,7 +206,7 @@ button:hover {
     div.button { width: 100px; }
 
     button.btn-lg{ display: hidden !important;}
-  span.glyphicon-globe{{ display: hidden !important;}
+  span.glyphicon-globe{display: hidden !important;}
 
 
   }
@@ -211,7 +214,7 @@ button:hover {
     div.button { width: 100px; }
 
     button.btn-lg{ display: hidden !important;}
-  span.glyphicon-globe{{ display: hidden !important;}
+  span.glyphicon-globe{ display: hidden !important;}
 
 
 }
@@ -230,7 +233,7 @@ background: #eae0c8;
 
 
     button.btn-lg{ display: hidden !important;}
-  span.glyphicon-globe{{ display: hidden !important;}
+  span.glyphicon-globe{ display: hidden !important;}
 
 
   }
@@ -238,15 +241,14 @@ background: #eae0c8;
     div.button { width: 100px; }
 
     button.btn-lg{ display: hidden !important;}
-  span.glyphicon-globe{{ display: hidden !important;}
+  span.glyphicon-globe{ display: hidden !important;}
 
 
   }
   @media screen and (max-width: 100px) {
     div.button { width: 100px; }
-
     button.btn-lg{ display: hidden !important;}
-  span.glyphicon-globe{{ display: hidden !important;}
+  span.glyphicon-globe{ display: hidden !important;}
 
   }
 
@@ -279,7 +281,7 @@ background: #eae0c8;
 
 <a class="nav" href="#header2">Information</a>  <a class="nav" href="#header1"> commands </a><a class="nav" href="#bottom">bottom of page </a><a class="nav" href="#top">top of page </a>
   <button type="button" class="btn btn-default morbid">
-contact   <span class="glyphicon glyphicon-envelope"></span></button>
+contact   <span class="glyphicon glyphicon-envelope" href="mailto:aimeelynnramirez@gmail.com"></span></button>
 
 <button type="button" class="btn btn-default morbid">
   <span class="glyphicon glyphicon-search"></span> Search
@@ -295,67 +297,148 @@ contact   <span class="glyphicon glyphicon-envelope"></span></button>
 
   <div class="button active" >
 </div>
-<h3>Popover Example</h3>
- <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
- <a href="#">Updates <span class="badge">2</span></a>
 
   <p>  Welcome to this page hosting a backend locally:  </p>
 <code><a href="https://github.com/Aimeelynnramirez/local-wordpress-hosting.git"> Fork it here!</a></code>
-<h1 id="header1"> Header 1:</h1>
+<h1 id="header1" style="text-align:center;"> Resource CheatSheet for PostgreSQL:</h1>
 <hr>
 These are a few commands to use in PostgresSQL<hr>
-<code>\l list
- <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+<code>\l
+ <a href="#header1"  class="glyphicon glyphicon glyphicon-open"
+data-toggle="popover" title="Popover Header" data-content="this command list all the types"></a>
 </code>
 <hr>
-this command list all the type<hr>
-<code>\d databases <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+<hr>
+<code>\d <a href="#header1" class="glyphicon glyphicon glyphicon-open"
+ data-toggle="popover" title="Popover Header" data-content="this command list all the types of db"></a>
 </code>
 <hr>
-this command list all the type<hr>
-<code>\l list  <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+
+<hr>
+
+<code>\db  <a href="#header1"  class="glyphicon glyphicon glyphicon-open"
+data-toggle="popover" title="Popover Header" data-content="current database type"></a>
 </code>
 <hr>
-this command list all the type<hr>
-<code>\db database type <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+<hr>
+<code>\c <a href="#header1"  class="glyphicon glyphicon glyphicon-open"
+data-toggle="popover" title="Popover Header" data-content="connect to db"></a>
 </code>
 <hr>
-this command list all the type<hr>
-<code>\c connect <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+<hr>
+<code>\dt  <a href="#header1"  class="glyphicon glyphicon glyphicon-open"
+data-toggle="popover" title="Popover Header" data-content="list tables"></a>
 </code>
 <hr>
-this command list all the type<hr>
-<code>\dt list tables <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+<hr>
+<code>\i  <a href="#header1" class="glyphicon glyphicon glyphicon-open"
+ data-toggle="popover" title="Popover Header" data-content="import file"></a>
 </code>
 <hr>
-this command list all the type<hr>
-<code>\i import file <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
-</code>
-<hr>
-<h1 id="header2"> Header 2:</h1>
+
+
+
+<h1 id="header1.5"> Queries:</h1>
 Example above:<hr>
-<li>\i scripts/cookbook/010_insert_into_ingredients. <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+<li>\i scripts/cookbook/010_insert_into_ingredients. <a href="#header1.5" data-toggle="popover" title="Popover Header" data-content="\i"></a>
 </li>
-<li>\d  data <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+<li>\d <a href="#header1.5" data-toggle="popover" title="Popover Header" data-content="data queries"></a>
 </li>
 .clear  reset of data after ran a new folder?
  select * from ingredients; don't forget ;   (semicolon)
-don't forget tab complete!
 </code>
-<hr>
+
+
+<h1 id="header1.75"> Installing Postgres/brew services:</h1>
+How do I install postgres using brew?
+<a href="#header2"
+ data-toggle="popover"
+ class="glyphicon glyphicon glyphicon-open"
+ title="Popover Brew"
+ data-content="brew install postgres
+"></a>
+
+ <hr>
+
+How do I start postgres as a background service?
+<a href="#header2"
+ data-toggle="popover"
+ class="glyphicon glyphicon glyphicon-open"
+ title="Popover  Brew"
+ data-content="brew tap homebrew/services"></a>
+
+ <hr>
+
+How do I  stop postgres manually?
+<a href="#header2"
+ data-toggle="popover"
+ class="glyphicon glyphicon glyphicon-open"
+ title="Popover  Brew"
+ data-content="brew services stop postgresql"></a>
+
+ <hr>
 
 
 
-  <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-    <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+
+
+How can restart brew services to restart Postgres?
+<a href="#header2"
+ data-toggle="popover"
+ class="glyphicon glyphicon glyphicon-open"
+ title="Popover  Brew"
+ data-content="brew services restart postgresql"></a>
+
+ <hr>
+
+
 <hr>
-Links: here
+
+
+ How do I create a new role?
+<a href="#header2"
+ data-toggle="popover"
+ class="glyphicon glyphicon glyphicon-open"
+ title="Popover Role"
+ data-content="CREATE ROLE role_name;"></a>
+
+ <hr>
+
+How do I create a new role with a username and password?
+
+<a href="#header2"
+ data-toggle="popover"
+ title="Popover Role"
+ class="glyphicon glyphicon glyphicon-open"
+ data-content="CREATE ROLE username NOINHERIT LOGIN PASSWORD password;
+"></a>
 <hr>
-Links: here
+How do I change role for the current session to the new_role?
+<a href="#header2"
+ data-toggle="popover"
+ title="Popover Role"
+ class="glyphicon glyphicon glyphicon-open"
+ data-content="SET ROLE new_role;"
+></a>
 <hr>
-Links: here
+How do I allow role_1 to set its role as role_2?
+<a href="#header2"
+ data-toggle="popover"
+ title="Popover Role"
+ class="glyphicon glyphicon glyphicon-open"
+ data-content="GRANT role_2 TO role_1;"
+></a>
+
+
+<hr>
+
+<hr>
+
+Links:
+<a href="http://www.postgresqltutorial.com/wp-content/uploads/2017/02/PostgreSQL-Cheat-Sheet-768x522.png">sources</a>
+<hr>
+
 <div class="LI-profile-badge"
 data-version="v1"
 data-size="medium"
