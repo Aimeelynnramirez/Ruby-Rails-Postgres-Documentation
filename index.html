@@ -2,110 +2,371 @@
 <html>
 <head>
   <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A cool thing made with by art">
+      <!-- <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon"> -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+ <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script>
+ const result = document.querySelector('#header1','#header2' ,'#top')
+ console.log(result);
+
+ </script>
+ <script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+</script>
+
 
 <style>
 html{
-  position:absolute;
-  overflow: auto;
-  text-align:right;
-  background:url("https://cdn.pixabay.com/photo/2014/09/24/16/28/bricks-459299_1280.jpg");
-  background-color: #cc99a2;
-
+  background-color: grey !important;
+  height: 100%;
+  width:100%;
+  max-width: 100%;
+  max-height: 2400px;
 }
 body {
-  position:absolute;
-  color:black;
-  padding:0 25%;
-  background-repeat:repeat-x;
-  height:1000px;
-  width:1000px;
+  background-color: grey !important;
+color:black;
+padding: 2%;
+font-family: 'Open Sans', sans-serif;
+  height:100%;
+  width:100%;
+  max-height: 2400px;
   max-width: 100%;
-  background:url("https://cdn.pixabay.com/photo/2014/09/24/16/28/bricks-459299_1280.jpg");
 
+/*background:url("https://cdn.pixabay.com/photo/2014/09/24/16/28/bricks-459299_1280.jpg");*/
+
+}
+h1{
+  text-decoration: underline ;
 }
 .container{
-  z-index: -1;
-  position: fixed; /* Stay in place */
-  background-image: url("https://cdn.pixabay.com/photo/2017/01/17/03/57/season-1985856_1280.jpg");
-  background-position:center;
-  border: 4px dashed black;
-  height:50%;
-  background-color: white;
+box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
+border-top-left-radius:1em;
+border-top-right-radius: 1em;
+border-bottom-left-radius: 1em;
+border-bottom-right-radius: 1em;
+background-color:white !important;
+
+
+}
+.introduction {
+    max-width: 200px;
+    display: inline;
+  color: blue;
+  border-top-left-radius:1.2em;
+  border-top-right-radius: 1.2em;
+
+/*  background: linear-gradient(to right, transparent, rgba(255,	228,	225));*/
+
+    }
+
+.button {
+  padding: 100px;
+   background-image: url("https://i.imgur.com/uyYHmPJ.jpg");
+color:black;
+background-size: cover;
+  width:100%;
+height:297px;
+  border-top-left-radius:1.2em;
+  border-top-right-radius: 1.2em;
+  border-bottom-left-radius: 1.2em;
+  border-bottom-right-radius: 1.2em;
+
+}
+
+@media screen and (max-width: 400px) {
+  div.button { width: 100px; }
+  div.btn-lg{ width: 100px; }
+
+}
+@media screen and (max-width: 200px) {
+  div.button { width: 100px; }
+  div.btn-lg{ width: 100px; }
+
+}
+@media screen and (max-width: 100px) {
+  div.button { width: 100px; }
+  div.btn-lg{ width: 100px; }
+
+}
+  .button:hover{
+    border-color: orange !important;
+    width:100%;
+  height:297px;
+    border-style: groove;
+    border-top-left-radius:1.2em;
+    border-top-right-radius: 1.2em;
+    border-bottom-left-radius: 1.2em;
+    border-bottom-right-radius: 1.2em;
+
+  }
+
+  @media screen and (max-width: 400px) {
+    div.btn-lg{ width: 100px; }
+
+
+  }
+  @media screen and (max-width: 200px) {
+    div.btn-lg{ width: 100px; }
+
+
+  }
+  @media screen and (max-width: 100px) {
+    div.btn-lg { width: 50px; }
+
+
+  }
+  .btn {
+    background: transparent;
+  }
+  .glyphicon {
+    color:white;
+  }
+  .button:active {
+    border-color: red !important;
+    width:100%;
+  height:297px;
+   border-style: groove;
+    border-top-left-radius:1.2em;
+    border-top-right-radius: 1.2em;
+    border-bottom-left-radius: 1.2em;
+    border-bottom-right-radius: 1.2em;
+    box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
+
+  }
+
+  @media screen and (max-width: 400px) {
+    div.button { width: 100px; }
+    button.btn-lg{ display: hidden; }
+  span.glyphicon-globe{ display: hidden; }
+
+
+  }
+  @media screen and (max-width: 200px) {
+    div.button { width: 100px; }
+    button.btn-lg{ display: hidden; }
+    span.glyphicon-globe{ display: hidden; }
+
+
+  }
+  @media screen and (max-width: 100px) {
+    div.button { width: 100px; }
+    button.btn-lg{ display: hidden; }
+  span .glyphicon-globe{ display: hidden; }
+
+  }
+
+button{
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+   width:100%;
 
 
 }
 
-.modal {
-  position:absolute;
-   z-index: 1;
-    font-size: 1.5rem;
-    color: white;
-    text-align:center; /* Location of the box */
+button:hover {
+  border-color: orange !important;
+  border-style: groove;
+}
 
-    width:100%; /* Full width */
-    height: 20%; /* Full height */
-   background-color:grey;
-    font-family: 'Roboto', sans-serif;
+  @media screen and (max-width: 400px) {
+    div.button { width: 100px; }
+
+
+    button.btn-lg{ display: hidden !important;}
+  span.glyphicon-globe{{ display: hidden !important;}
+
+
+  }
+  @media screen and (max-width: 200px) {
+    div.button { width: 100px; }
+
+    button.btn-lg{ display: hidden !important;}
+  span.glyphicon-globe{{ display: hidden !important;}
+
+
+  }
+  @media screen and (max-width: 100px) {
+    div.button { width: 100px; }
+
+    button.btn-lg{ display: hidden !important;}
+  span.glyphicon-globe{{ display: hidden !important;}
+
+
+}
+
+.nav  {
+
+  float:right !important;
+color:red !important;
+width:100%;
+background: #eae0c8;
+  text-align: center;
+}
+
+  @media screen and (max-width: 400px) {
+    div.button { width: 100px; }
+
+
+    button.btn-lg{ display: hidden !important;}
+  span.glyphicon-globe{{ display: hidden !important;}
+
+
+  }
+  @media screen and (max-width: 200px) {
+    div.button { width: 100px; }
+
+    button.btn-lg{ display: hidden !important;}
+  span.glyphicon-globe{{ display: hidden !important;}
+
+
+  }
+  @media screen and (max-width: 100px) {
+    div.button { width: 100px; }
+
+    button.btn-lg{ display: hidden !important;}
+  span.glyphicon-globe{{ display: hidden !important;}
+
   }
 
-  .modal-info{
-   /* Sit on top */
-    position:absolute;
-    color: white;
 
-    text-align:center; /* Location of the box */
-
-    background-color:#99ccc3;
-    width:100%; /* Full width */
-    height: 20%; /* Full height */
-    font-family: 'Open Sans', sans-serif;
-  }
-  .modal-row{
-    background: linear-gradient(to right, transparent, rgba(255,	228,	225));
+      hr{
+        font-family: 'Open Sans', sans-serif;
       }
-  p{
-      text-align:center; /* Location of the box */
+      code{
+        color:red !important;
+  background: lightgrey;
+      }
+  p {
+    background-color: #eae0c8;
+
       width:100%;
       height: 100%; /* Full height */
       font-family: 'Open Sans', sans-serif;
-
-      max-width: 50%;/* Full width */
-
-      border: 3px dashed black;
+      max-width: inherit;/* Full width */
+      max-height: inherit;/* Full width */
 
     }
+
     </style>
     </head>
-    <body>
+    <body >
 
-  <div class="container">
-      <div class="modal">
-      <div class="modal-info">image</div>
-        </div>
+  <div class="container" id="top">
 
-<div class="modal-row">
-  Welcome to this page hosting a backend locally:
-</code><a href="https://github.com/Aimeelynnramirez/local-wordpress-hosting.git" style="background-color:#cfecfe; color:rebeccapurple;"> Fork it here!</a></code>
-  for a front-end repo for github !!
-  <hr>
-  Shortcut list of command lines:
+<div class="introduction" >
 
+<a class="nav" href="#header2">Information</a>  <a class="nav" href="#header1"> commands </a><a class="nav" href="#bottom">bottom of page </a><a class="nav" href="#top">top of page </a>
+  <button type="button" class="btn btn-default morbid">
+contact   <span class="glyphicon glyphicon-envelope"></span></button>
 
-<li>  \l list</li>
-<li>\c  connect</li>
-<li>\dt  display table</li>
-<li>\i  run file</li>
- example:
-<li>\i scripts/cookbook/010_insert_into_ingredients.</li>
-<li>\d  data</li>
+<button type="button" class="btn btn-default morbid">
+  <span class="glyphicon glyphicon-search"></span> Search
+</button>
+</div>
+<div class="btn" style="float:right !important;">
+  <button type="button" class="btn btn-lg">
+    <span class="glyphicon glyphicon-globe" >
+
+    </span>
+   </button>
+</div>
+
+  <div class="button active" >
+</div>
+<h3>Popover Example</h3>
+ <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+ <a href="#">Updates <span class="badge">2</span></a>
+
+  <p>  Welcome to this page hosting a backend locally:  </p>
+<code><a href="https://github.com/Aimeelynnramirez/local-wordpress-hosting.git"> Fork it here!</a></code>
+<h1 id="header1"> Header 1:</h1>
+<hr>
+These are a few commands to use in PostgresSQL<hr>
+<code>\l list
+ <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+</code>
+<hr>
+this command list all the type<hr>
+<code>\d databases <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+</code>
+<hr>
+this command list all the type<hr>
+<code>\l list  <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+</code>
+<hr>
+this command list all the type<hr>
+<code>\db database type <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+</code>
+<hr>
+this command list all the type<hr>
+<code>\c connect <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+</code>
+<hr>
+this command list all the type<hr>
+<code>\dt list tables <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+</code>
+<hr>
+this command list all the type<hr>
+<code>\i import file <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+</code>
+<hr>
+<h1 id="header2"> Header 2:</h1>
+Example above:<hr>
+<li>\i scripts/cookbook/010_insert_into_ingredients. <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+</li>
+<li>\d  data <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+</li>
 .clear  reset of data after ran a new folder?
  select * from ingredients; don't forget ;   (semicolon)
 don't forget tab complete!
+</code>
+<hr>
+
+
+
+  <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+<hr>
+Links: here
+<hr>
+Links: here
+<hr>
+Links: here
+<div class="LI-profile-badge"
+data-version="v1"
+data-size="medium"
+data-locale="en_US"
+data-type="horizontal"
+data-theme="light"
+data-vanity="alramirez253"
+><button type="button" class="btn btn-default">X</button>
+
+<a class="LI-simple-link" href='https://www.linkedin.com/in/alramirez253?trk=profile-badge'>Aimee Lynn R.</a></div>
+    <hr id="bottom">
 
  </div>
 </div>

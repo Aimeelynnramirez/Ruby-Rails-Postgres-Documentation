@@ -1,7 +1,7 @@
 {
   "name": "wp-api-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "This boilerplate will help you use React JS with Wordpress REST API. Clone the project and install node packages:",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -33,6 +33,15 @@
     "rimraf": "^2.6.1",
     "webpack": "^2.6.1",
     "webpack-cli": "^2.0.14",
-    "webpack-dev-server": "^2.4.5"
-  }
+    "webpack-dev-server": "^2.4.5",
+    "workbox-webpack-plugin": "^3.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aimeelynnramirez/template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Aimeelynnramirez/template/issues"
+  },
+  "homepage": "https://github.com/Aimeelynnramirez/template#readme"
 }
